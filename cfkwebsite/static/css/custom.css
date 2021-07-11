@@ -1,0 +1,22 @@
+.parallax {
+    /* The image used */
+    /*background-image: url("{% static 'img/pexels-pixabay-509246_500x750.jpg' %}");*/
+
+    /* Set a specific height */
+    min-height: 5000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item-size {
+    height: 350px;
+    width: 100%;
+}
+
+.overwrite-link-blue-color {
+    color:inherit
+}
