@@ -26,6 +26,7 @@
 <div class="text-white">
     <div class="container-fluid overwrite-link-blue-color">
         <a class="overwrite-link-blue-color" href="mailto:fookeongc@gmail.com"><span class="fas fa-envelope-square"></span></a>
+        <a class="overwrite-link-blue-color" href="https://fkchong.pythonanywhere.com" target="_blank"><span class="fas fa-globe"></span></a>
         <a class="overwrite-link-blue-color" href="https://www.facebook.com/fkchong" target="_blank"><span class="fab fa-facebook"></span></a>
         <a class="overwrite-link-blue-color" href="https://twitter.com/fkchong" target="_blank"><span class="fab fa-twitter"></span></a>
         <a class="overwrite-link-blue-color" href="https://github.com/fkchong" target="_blank"><span class="fab fa-github"></span></a>
@@ -49,12 +50,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#!">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#!">Link</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#!">Disabled</a>
-                    </li>
+                    </li>-->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="text-white form-control mr-sm-2" style="background-color:inherit" placeholder="Search" type="text">
@@ -89,13 +90,10 @@
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active text-center carousel-item-size">
                 <h1 class="display-3 text-white text-handwriting text-uppercase">Welcome to CFK Website</h1>
-                <hr>
-                <h1 class="h2 text-success text-uppercase title-margin-fix">Where Possibilities are Endless</h1>
+                <br>
+                <h1 class="h2 text-mauve text-uppercase title-margin-fix">Where the Possibilities are Endless</h1>
             </div>
             <div class="carousel-item text-center carousel-item-size">
-                <h1 class="display-3 text-white text-handwriting text-uppercase">Welcome to CFK Website</h1>
-                <hr>
-                <h1 class="h2 text-success text-uppercase title-margin-fix">Where Possibilities are Endless</h1>
             </div>
             <div class="carousel-item text-center carousel-item-size">
             </div>
@@ -117,6 +115,17 @@
     {% static_placeholder 'footer' 1 %}
 </footer>
 
+<div class="ht-tm-codeblock ht-tm-btn-replaceable cookie-container">
+    <p class="text-white">
+        By using this website, you are agree to our use of cookies. We use cookies to give you the best experience and to help our website run effectively. <a href="#!" class="cookie-btn"><span class="far fa-window-close"></span></a>
+    </p>
+
+    <!--<button class="cookie-btn">
+        Okay
+    </button>-->
+    <!--<a href="#!" class="cookie-btn ht-tm-element btn btn-outline-primary">OK</a>-->
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -129,6 +138,7 @@
 <script crossorigin="anonymous"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="{% static 'js/custom.js' %}"></script>
         {% render_block "js" %}
 
 </body>
